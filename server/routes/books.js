@@ -1,3 +1,10 @@
+
+// File name: books.js
+// Student name: Keyur Sheladeeya
+// Student Id: 301167493
+// Date: 07-03-2021 (DD-MM-YYYY)
+
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();
@@ -114,9 +121,20 @@ router.post('/:id', (req, res, next) => {
 // GET - process the delete by user id
 router.get('/delete/:id', (req, res, next) => {
 
-    /*****************
-     * ADD CODE HERE *
-     *****************/
+  let id = req.params.id;
+    
+  book.remove({_id:id}, (err) => {
+      if(err)
+      {
+          console.log(err);
+          res.end(err); // if error occurs, stop the server 
+      }
+      else
+      {
+          //refresh the books list
+          res.redirect('/books');
+      }
+  });
 });
 
 
