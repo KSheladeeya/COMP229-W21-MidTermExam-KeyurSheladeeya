@@ -45,17 +45,17 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/KSheladeeya/COMP229-W21-MidTermExam-KeyurSheladeeya.git"
   },
   "keywords": [
     "NodeJS",
     "ExpressJS",
     "EJS"
   ],
-  "author": "Your Name Goes Here",
+  "author": "Keyur Sheladeeya",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/KSheladeeya/COMP229-W21-MidTermExam-KeyurSheladeeya/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/KSheladeeya/COMP229-W21-MidTermExam-KeyurSheladeeya#readme"
 }
